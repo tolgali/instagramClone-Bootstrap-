@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset=" UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- Font Avesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Instagram</title>
+</head>
+
+<body>
+
+
+  <!-- Navbar - START -->
+  <div class="row">
+    <div class="col-sm-12">
+      <nav class="navbar navbar-expand-lg navbar-light border fixed-top main-nav-color">
+
+        <div class="container d-flex justify-content-between exContainer">
+
+          <!-- Nav LOGO - START -->
+          <div class="logo d-flex align-items-center">
+            <a class="navbar-brand" href="#"><img
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" /></a>
+          </div>
+          <!-- Nav LOGO - END -->
+
+          <div class="d-flex justify-content-between">
+
+            <!-- Navbar Search - START  -->
+            <div class="collapse navbar-collapse d-flex justify-content-center align-items-center ms-5" " id="
+              navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0  d-none d-lg-block ">
+
+                <input class="form-control mr-sm-2 empty p-3 ms-xxl-5" type="search" placeholder="     Search"
+                  style="font-family: Arial, FontAwesome; height: 36px; width: 260px; background-color: rgba(142, 142, 142,.1); outline: none ; border: none;"
+                  aria-label="Search" />
+
+              </form>
+            </div>
+
+            <!-- Navbar Search - END -->
+
+            <!-- Navbar İcons - START -->
+            <div class="nav-icons collapse navbar-collapse " id="navbarSupportedContent" style="margin-left: 80px;">
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">
+                    <svg aria-label="Ana Sayfa" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                      viewBox="0 0 24 24" width="24">
+                      <path
+                        d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item ml-5">
+                  <a class="nav-link" href="javascript:void(0);">
+                    <svg aria-label="Direct" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                      viewBox="0 0 24 24" width="24">
+                      <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22"
+                        x2="9.218" y1="3" y2="10.083"></line>
+                      <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                        stroke="currentColor" stroke-linejoin="round" stroke-width="2">
+                      </polygon>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item ml-5">
+                  <a class="nav-link" href="javascript:void(0);">
+                    <svg aria-label="Yeni Gönderi" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                      viewBox="0 0 24 24" width="24">
+                      <path
+                        d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2">
+                      </path>
+                      <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
+                      <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item ml-5">
+                  <a class="nav-link" href="javascript:void(0);">
+                    <svg aria-label="Kişiler Bul" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                      viewBox="0 0 24 24" width="24">
+                      <polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+                      <polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056">
+                      </polygon>
+                      <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"></circle>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item ml-5">
+                  <a class="nav-link" href="javascript:void(0);">
+                    <svg aria-label="Hareket Akışı" class="_8-yf5 " color="#262626" fill="#262626" height="24"
+                      role="img" viewBox="0 0 24 24" width="24">
+                      <path
+                        d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item ml-5">
+                  <a class="nav-link" href="javascript:void(0);">
+                    <img src="./assets/img/cengizmataraci.jpg" class="profilePic" width="24" height="24" alt="Profile"
+                      style="border-radius:50%">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Navbar İcons - END -->
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar - END -->
+
+  <!-- Container - START -->
+  <div class="container-md ">
+
+
+    <div class="container middlearea mt-5" style="padding-top: 42px;">
+      <div class="row d-flex justify-content-center">
+        <div class="com-sm-12 col-lg-6">
+
+          <!-- Section Story - START -->
+          <div class="card ">
+            <div class="card-body d-flex justify-content-between text-center" style="overflow: auto;">
+
+              <a href="https://www.instagram.com/kablosuzkedi/" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/kablosuzkedi.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">kablosuzkedi</span>
+              </a>
+              <a href="https://www.instagram.com/tayfunerbilen/" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/tayfunerbilen.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">tayfunerbilen</span>
+              </a>
+              <a href="https://www.instagram.com/hakanyalcinkaya/" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/hakanyalcin.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">hakanyalcin</span>
+              </a>
+              <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/furkantolga.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">furkanaktolga</span>
+              </a>
+
+              <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/kodluyoruz.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">kodluyoruz</span>
+              </a>
+              <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/kodluyoruz.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">kodluyoruz</span>
+              </a>
+              <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                <img src="assets/img/kodluyoruz.jpg" class="storyphoto img-fluid " />
+                <span class="storytext">kodluyoruz</span>
+              </a>
+
+
+
+            </div>
+          </div>
+          <!-- Section Story - END -->
+
+          <!-- Section Post 1 - START  -->
+          <div class="card mt-3">
+            <div class="card-header">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <img src="./assets/img/cengizmataraci.jpg" class="mr-2"
+                    style="width: 35px; height: 35px; border-radius: 50%; margin-right: 4px;" />
+                  <span class="postuserfont"><strong><a href="https://www.instagram.com/cengizcmataraci" target="_blank"
+                        style="color: black;">cengizcmataraci</a></strong></span>
+                </div>
+                <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+              </div>
+            </div>
+            <img src="./assets/img/cengizmataraci.jpg" class="card-img-top" alt="..." />
+            <ul class="list-group list-group-horizontal mt-1 list-inline" style="list-style-type: none;">
+
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                    style="color: black; position: relative; font-size: 23px"></i></a>
+              </li>
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                        color: black;
+                        position: relative;
+                        font-size: 23px;
+                        margin-left: -11px;
+                      "></i></a>
+              </li>
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                        color: black;
+                        position: relative;
+                        font-size: 23px;
+                        margin-left: -11px;
+                      "></i></a>
+              </li>
+              <span class="ms-auto p-2 mx-2">
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"></i></a>
+                </li>
+              </span>
+            </ul>
+            <span class="p-1 ms-2">
+              <img src="./assets/img/cengizmataraci.jpg" class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%" />
+              <span class="postuserfont"><strong>cengizmataraci</strong> ve
+                <strong>42 diğer kişi</strong> beğendi</span>
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Burası Rize! Harika bir
+                cennet!
+              </p>
+              <a href="#" style="text-decoration: none">
+                <p class="card-text postuserfont" style="
+                      margin-left: -4px;
+                      margin-top: -14px;
+                      color: rgb(139, 133, 133);
+                    ">
+                  15 yorumun tümünü gör
+                </p>
+              </a>
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok güzelmiş yaa! Bir
+                gün
+                götürürsün artık bizi de:)
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful view bro! I
+                always want to travel Rize...
+              </p>
+              <p class="card-text" style="
+                    margin-top: -10px;
+                    margin-left: -4px;
+                    font-size: 12px;
+                    color: rgb(139, 133, 133);
+                  ">
+                10 SAAT ÖNCE
+              </p>
+            </div>
+            <div class="card-footer d-flex justify-content-between" style="
+                  color: rgb(139, 133, 133);
+                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                    'Helvetica Neue', sans-serif;
+                  font-size: 14px;
+                ">
+              <span style="margin-left: -4px">Yorum Ekle...</span>
+              <span class="" style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+            </div>
+          </div>
+          <!-- Section Post 1 - END  -->
+
+
+          <!-- Section Post 2  - START  -->
+          <div class="card mt-3">
+            <div class="card-header">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <img src="./assets/img/cengizmataraci.jpg" class="mr-2"
+                    style="width: 35px; height: 35px; border-radius: 50%; margin-right: 4px;" />
+                  <span class="postuserfont"><strong><a href="https://www.instagram.com/cengizcmataraci" target="_blank"
+                        style="color: black;">cengizcmataraci</a></strong></span>
+                </div>
+                <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+              </div>
+            </div>
+            <img src="./assets/img/cengizmataraci.jpg" class="card-img-top" alt="..." />
+            <ul class="list-group list-group-horizontal mt-1 list-inline" style="list-style-type: none;">
+
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                    style="color: black; position: relative; font-size: 23px"></i></a>
+              </li>
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                        color: black;
+                        position: relative;
+                        font-size: 23px;
+                        margin-left: -11px;
+                      "></i></a>
+              </li>
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                        color: black;
+                        position: relative;
+                        font-size: 23px;
+                        margin-left: -11px;
+                      "></i></a>
+              </li>
+              <span class="ms-auto p-2 mx-2">
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"></i></a>
+                </li>
+              </span>
+            </ul>
+            <span class="p-1 ms-2">
+              <img src="./assets/img/cengizmataraci.jpg" class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%" />
+              <span class="postuserfont"><strong>cengizmataraci</strong> ve
+                <strong>42 diğer kişi</strong> beğendi</span>
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Burası Rize! Harika bir
+                cennet!
+              </p>
+              <a href="#" style="text-decoration: none">
+                <p class="card-text postuserfont" style="
+                      margin-left: -4px;
+                      margin-top: -14px;
+                      color: rgb(139, 133, 133);
+                    ">
+                  15 yorumun tümünü gör
+                </p>
+              </a>
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok güzelmiş yaa! Bir
+                gün
+                götürürsün artık bizi de:)
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful view bro! I
+                always want to travel Rize...
+              </p>
+              <p class="card-text" style="
+                    margin-top: -10px;
+                    margin-left: -4px;
+                    font-size: 12px;
+                    color: rgb(139, 133, 133);
+                  ">
+                10 SAAT ÖNCE
+              </p>
+            </div>
+            <div class="card-footer d-flex justify-content-between" style="
+                  color: rgb(139, 133, 133);
+                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                    'Helvetica Neue', sans-serif;
+                  font-size: 14px;
+                ">
+              <span style="margin-left: -4px">Yorum Ekle...</span>
+              <span class="" style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+            </div>
+          </div>
+          <!-- Section Post 2  - END  -->
+
+          <!-- Section Post 3  - START  -->
+          <div class="card mt-3">
+            <div class="card-header">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <img src="./assets/img/cengizmataraci.jpg" class="mr-2"
+                    style="width: 35px; height: 35px; border-radius: 50%; margin-right: 4px;" />
+                  <span class="postuserfont"><strong><a href="https://www.instagram.com/cengizcmataraci" target="_blank"
+                        style="color: black;">cengizcmataraci</a></strong></span>
+                </div>
+                <span class="mt-2"><strong><i class="fas fa-ellipsis-h"></i></strong></span>
+              </div>
+            </div>
+            <img src="./assets/img/cengizmataraci.jpg" class="card-img-top" alt="..." />
+            <ul class="list-group list-group-horizontal mt-1 list-inline" style="list-style-type: none;">
+
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                    style="color: black; position: relative; font-size: 23px"></i></a>
+              </li>
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-comment fa-lg" style="
+                        color: black;
+                        position: relative;
+                        font-size: 23px;
+                        margin-left: -11px;
+                      "></i></a>
+              </li>
+              <li class="nav-item list-inline-item p-2 mx-2">
+                <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg" style="
+                        color: black;
+                        position: relative;
+                        font-size: 23px;
+                        margin-left: -11px;
+                      "></i></a>
+              </li>
+              <span class="ms-auto p-2 mx-2">
+                <li class="nav-item ml-4">
+                  <a class="nav-link ml-2" href="#"><i class="far fa-bookmark fa-lg"
+                      style="color: black; position: relative; font-size: 23px"></i></a>
+                </li>
+              </span>
+            </ul>
+            <span class="p-1 ms-2">
+              <img src="./assets/img/cengizmataraci.jpg" class="mb-1 ml-3"
+                style="width: 23px; height: 23px; border-radius: 50%" />
+              <span class="postuserfont"><strong>cengizmataraci</strong> ve
+                <strong>42 diğer kişi</strong> beğendi</span>
+            </span>
+            <div class="card-body" style="margin-top: -15px">
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Burası Rize! Harika bir
+                cennet!
+              </p>
+              <a href="#" style="text-decoration: none">
+                <p class="card-text postuserfont" style="
+                      margin-left: -4px;
+                      margin-top: -14px;
+                      color: rgb(139, 133, 133);
+                    ">
+                  15 yorumun tümünü gör
+                </p>
+              </a>
+              <p class="card-text postuserfont">
+                <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok güzelmiş yaa! Bir
+                gün
+                götürürsün artık bizi de:)
+              </p>
+              <p class="card-text postuserfont" style="margin-top: -15px">
+                <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful view bro! I
+                always want to travel Rize...
+              </p>
+              <p class="card-text" style="
+                    margin-top: -10px;
+                    margin-left: -4px;
+                    font-size: 12px;
+                    color: rgb(139, 133, 133);
+                  ">
+                10 SAAT ÖNCE
+              </p>
+            </div>
+            <div class="card-footer d-flex justify-content-between" style="
+                  color: rgb(139, 133, 133);
+                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                    'Helvetica Neue', sans-serif;
+                  font-size: 14px;
+                ">
+              <span style="margin-left: -4px">Yorum Ekle...</span>
+              <span class="" style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+            </div>
+          </div>
+          <!-- Section Post 3  - END  -->
+        </div>
+
+
+
+
+
+
+        <!-- Section aside - START -->
+        <div class="col-md-3 d-none d-lg-block">
+          <div class="card col-xs-12 rightpanel" id="sticky-sidebar"
+            style="width: 18rem ; border: none; background-color: transparent;">
+            <div class="card-body d-flex ">
+              <div>
+                <a class="nav-link" href="#">
+                  <span>
+                    <img src="./assets/img/cengizmataraci.jpg" class="" style="
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 2px solid rgb(238, 39, 82);
+                        margin-left: -2px;
+                      " /><span class="" style="
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                          'Helvetica Neue', sans-serif;
+                        font-size: 15px;
+                        color: black;
+                        margin-left: 20px;
+                      "><strong>cengizcmataraci</strong>
+                    </span>
+                  </span>
+                </a>
+                <div class="my-3 ">
+                  <span style="
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                          sans-serif;
+                        font-size: 15px;
+                        color: gray;
+                      ">Senin İçin Öneriler</span>
+                  <span class="postuserfont  float-end" style="font-size: 12px"><strong>Tümünü Gör</strong></span>
+                </div>
+
+                <div class="mt-2 ml-2">
+
+                  <div class="d-flex justify-content-between">
+                    <span>
+                      <img src="./assets/img/kodluyoruz.jpg"
+                        style="width: 30px; height: 30px; border-radius: 50%; margin-right: 3px;" />
+                      <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                        <span class="postuserfont ml-2 mt-1"><strong>kodluyoruz_junior</strong></span>
+                      </a>
+                    </span>
+                    <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                      <span class="postuserfont" style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                          Et</strong></span>
+                    </a>
+
+                  </div>
+
+                  <div class="mt-2 ml-2">
+
+                    <div class="d-flex justify-content-between">
+                      <span>
+                        <img src="./assets/img/kodluyoruz.jpg"
+                          style="width: 30px; height: 30px; border-radius: 50%; margin-right: 3px;" />
+                        <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                          <span class="postuserfont ml-2 mt-1"><strong>kodluyoruz_junior</strong></span>
+                        </a>
+                      </span>
+                      <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                        <span class="postuserfont"
+                          style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                            Et</strong></span>
+                      </a>
+
+                    </div>
+                    <div class="mt-2 ml-2">
+
+                      <div class="d-flex justify-content-between">
+                        <span>
+                          <img src="./assets/img/kodluyoruz.jpg"
+                            style="width: 30px; height: 30px; border-radius: 50%; margin-right: 3px;" />
+                          <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                            <span class="postuserfont ml-2 mt-1"><strong>kodluyoruz_junior</strong></span>
+                          </a>
+                        </span>
+                        <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                          <span class="postuserfont"
+                            style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                              Et</strong></span>
+                        </a>
+                      </div>
+                      <div class="mt-2 ml-2">
+
+                        <div class="d-flex justify-content-between">
+                          <span>
+                            <img src="./assets/img/kodluyoruz.jpg"
+                              style="width: 30px; height: 30px; border-radius: 50%; margin-right: 3px;" />
+                            <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                              <span class="postuserfont ml-2 mt-1"><strong>kodluyoruz_junior</strong></span>
+                            </a>
+                          </span>
+                          <a href="https://www.instagram.com/kodluyoruz_junior/" target="_blank">
+                            <span class="postuserfont"
+                              style="font-size: 13px; color: #0095f6; margin-top: 5px"><strong>Takip
+                                Et</strong></span>
+                          </a>
+
+                        </div>
+
+                        <div class="ml-2 mt-4"
+                          style="color: lightgray; font-size: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                          <span><a href="https://about.instagram.com/" target="_blank"
+                              class="rightpanellinks">Hakkında</a> <a href="https://help.instagram.com/" target="_blank"
+                              class="rightpanellinks">Yardım</a> <a href="https://about.instagram.com/blog/"
+                              class="rightpanellinks">Basın</a> <a href="https://www.instagram.com/developer/"
+                              class="rightpanellinks">API</a> <a href="https://www.instagram.com/about/jobs/"
+                              class="rightpanellinks">İş Fırsatları</a> <a
+                              href="https://www.instagram.com/legal/privacy/"
+                              class="rightpanellinks">Gizlilik</a></span>
+                          <span><a href="https://www.instagram.com/legal/terms/" class="rightpanellinks">Koşullar</a> <a
+                              href="https://www.instagram.com/explore/locations/" class="rightpanellinks">Konumlar</a>
+                            <a href="https://www.instagram.com/directory/profiles/" class="rightpanellinks">Başlıca
+                              Hesaplar</a>
+                            <a href="https://www.instagram.com/directory/hashtags/" class="rightpanellinks">Konu
+                              Etiketleri</a>
+                            Dil</span>
+                          <p></p>
+                          <p style="font-size: 12px;">© 2021 INSTAGRAM FROM KODLUYORUZ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Section aside - END -->
+
+              </div>
+            </div>
+          </div>
+
+</body>
+
+</html>
